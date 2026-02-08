@@ -14,15 +14,15 @@ const space = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Signalframe - SaaS Growth and Conversion Agency",
+  title: "Greater - SaaS Growth and Conversion Agency",
   description:
-    "Signalframe helps growth-stage B2B SaaS teams fix positioning and conversion with clarity-first UX and high-performance design.",
+    "Greater helps growth-stage B2B SaaS teams fix positioning and conversion with clarity-first UX and high-performance design.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${space.variable}`}>
-      <body className="bg-ink text-white">{children}</body>
+      <body className="bg-paper text-ink">{children}</body>
     </html>
   );
 }

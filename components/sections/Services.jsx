@@ -26,45 +26,45 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-slate/80 py-24" aria-labelledby="services-title">
+    <section id="services" className="bg-paper py-24" aria-labelledby="services-title">
       <div className="mx-auto max-w-6xl space-y-12 px-6">
         <SectionHeader
           eyebrow="What We Deliver"
           titleId="services-title"
-          title="Three services. One outcome: a website that converts."
-          subtitle="Each engagement is structured around clarity, conversion, and credibility. No vague deliverables, just outcomes."
+          title="Three focused services built for conversion."
+          subtitle="We keep the scope tight: positioning, UX strategy, and a high-performance build that ships."
         />
         {/* Layout: 3-card grid with outcome-led service blocks. */}
         <div className="grid gap-6 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-3xl border border-white/10 bg-white/5 p-7 transition hover:-translate-y-1 hover:border-white/30"
+              className="group rounded-3xl border border-line bg-white p-7 shadow-soft transition hover:-translate-y-1"
             >
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="text-xl font-semibold text-ink">
                 {service.title}
               </h3>
-              <div className="mt-6 space-y-4 text-sm text-white/70">
+              <div className="mt-6 space-y-4 text-sm text-muted">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                     What it solves
                   </p>
-                  <p className="mt-2">{service.solves}</p>
+                  <p className="mt-2 text-ink">{service.solves}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                     What you get
                   </p>
-                  <p className="mt-2">{service.gets}</p>
+                  <p className="mt-2 text-ink">{service.gets}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                     Why it matters
                   </p>
-                  <p className="mt-2">{service.matters}</p>
+                  <p className="mt-2 text-ink">{service.matters}</p>
                 </div>
               </div>
-              <div className="mt-6 h-px w-full bg-white/10 transition group-hover:bg-brand/40" />
+              <div className="mt-6 h-px w-full bg-line transition group-hover:bg-accent/40" />
             </div>
           ))}
         </div>

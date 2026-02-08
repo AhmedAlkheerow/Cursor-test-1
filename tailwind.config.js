@@ -4,27 +4,31 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ink: "#0B0F1A",
-        slate: "#121826",
-        mist: "#F8FAFC",
-        line: "rgba(148, 163, 184, 0.2)",
-        brand: "#5B7CFF",
-        glow: "#7BE7FF",
-        accent: "#8EE6D0",
+        paper: "#F7F7F2",
+        fog: "#FBFBF8",
+        ink: "#101010",
+        muted: "#5B5B5B",
+        line: "#E5E5DF",
+        accent: "#E62B2D",
+        accentDark: "#C52025",
+        charcoal: "#0A0A0A",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
-        display: ["var(--font-space)", "var(--font-inter)", "ui-sans-serif", "system-ui"],
+        display: [
+          "var(--font-space)",
+          "var(--font-inter)",
+          "ui-sans-serif",
+          "system-ui",
+        ],
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(15, 23, 42, 0.35)",
-        glow: "0 0 0 1px rgba(91, 124, 255, 0.3), 0 20px 60px rgba(91, 124, 255, 0.35)",
+        soft: "0 20px 50px rgba(15, 15, 15, 0.08)",
+        crisp: "0 1px 0 rgba(16, 16, 16, 0.04), 0 12px 30px rgba(16, 16, 16, 0.08)",
       },
       backgroundImage: {
-        "hero-radial":
-          "radial-gradient(80% 80% at 50% 0%, rgba(91, 124, 255, 0.25) 0%, rgba(11, 15, 26, 0) 70%)",
-        grid:
-          "linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px)",
+        "hero-sheen":
+          "radial-gradient(70% 80% at 70% 0%, rgba(230, 43, 45, 0.16) 0%, rgba(247, 247, 242, 0) 65%)",
       },
       keyframes: {
         "fade-up": {

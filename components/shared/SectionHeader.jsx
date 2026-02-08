@@ -11,18 +11,18 @@ export default function SectionHeader({
   return (
     <div className={`flex flex-col gap-4 ${alignment}`}>
       {eyebrow ? (
-        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand/80">
+        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">
           {eyebrow}
         </span>
       ) : null}
       <h2
         id={titleId}
-        className="text-3xl font-semibold text-white sm:text-4xl"
+        className="text-3xl font-semibold text-ink sm:text-4xl"
       >
         {title}
       </h2>
       {subtitle ? (
-        <p className="max-w-2xl text-base text-white/70 sm:text-lg">
+        <p className="max-w-2xl text-base text-muted sm:text-lg">
           {subtitle}
         </p>
       ) : null}

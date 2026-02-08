@@ -21,7 +21,7 @@ const proofPoints = [
 const testimonials = [
   {
     quote:
-      "Signalframe translated our product into a story buyers instantly understood. The clarity shift changed how every channel performs.",
+      "Greater translated our product into a story buyers instantly understood. The clarity shift changed how every channel performs.",
     name: "Founder",
     role: "B2B SaaS Platform",
   },
@@ -35,7 +35,7 @@ const testimonials = [
 
 export default function Proof() {
   return (
-    <section id="proof" className="bg-slate/80 py-24" aria-labelledby="proof-title">
+    <section id="proof" className="bg-paper py-24" aria-labelledby="proof-title">
       <div className="mx-auto max-w-6xl space-y-12 px-6">
         <SectionHeader
           eyebrow="Proof and Fit"
@@ -48,29 +48,29 @@ export default function Proof() {
           {proofPoints.map((point) => (
             <div
               key={point.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-white/30"
+              className="rounded-3xl border border-line bg-white p-6 shadow-soft transition hover:-translate-y-1"
             >
-              <h3 className="text-lg font-semibold text-white">{point.title}</h3>
-              <p className="mt-3 text-sm text-white/70">{point.description}</p>
+              <h3 className="text-lg font-semibold text-ink">{point.title}</h3>
+              <p className="mt-3 text-sm text-muted">{point.description}</p>
             </div>
           ))}
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-white/40">
+          <div className="rounded-3xl border border-line bg-white p-7 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted">
               This is for
             </p>
-            <ul className="mt-4 space-y-3 text-sm text-white/70">
+            <ul className="mt-4 space-y-3 text-sm text-muted">
               <li>Growth-stage B2B SaaS teams with active demand.</li>
               <li>Founders and CMOs ready to align product and marketing.</li>
               <li>Teams that need clarity across homepage, pricing, and demo flow.</li>
             </ul>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-white/40">
+          <div className="rounded-3xl border border-line bg-white p-7 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted">
               This is not for
             </p>
-            <ul className="mt-4 space-y-3 text-sm text-white/70">
+            <ul className="mt-4 space-y-3 text-sm text-muted">
               <li>Pre-product ideas or unvalidated markets.</li>
               <li>Teams looking for rapid, low-cost design churn.</li>
               <li>Brands that want a redesign without strategy.</li>
@@ -81,19 +81,20 @@ export default function Proof() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.quote}
-              className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-transparent p-7"
+              className="rounded-3xl border border-line bg-white p-7 shadow-soft"
             >
-              <p className="text-base text-white/80">"{testimonial.quote}"</p>
-              <div className="mt-5 text-sm text-white/60">
-                <p className="font-semibold text-white">{testimonial.name}</p>
+              <p className="text-base text-muted">"{testimonial.quote}"</p>
+              <div className="mt-5 text-sm text-muted">
+                <p className="font-semibold text-ink">{testimonial.name}</p>
                 <p>{testimonial.role}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="rounded-3xl border border-brand/30 bg-brand/10 p-7 text-sm text-white/70">
-          Authority positioning: We focus exclusively on SaaS growth-stage teams.
-          The playbook is built on real buyer journeys, not generic agency templates.
+        <div className="rounded-3xl border border-accent/30 bg-white p-7 text-sm text-muted shadow-soft">
+          Authority positioning: We focus exclusively on growth-stage SaaS.
+          Our playbook is built on real buyer journeys, not generic agency
+          templates.
         </div>
       </div>
     </section>
